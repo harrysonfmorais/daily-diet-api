@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  daily-diet-api-pg:
+    image: bitnami/postgresql
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=daily-diet
+      - POSTGRESQL_PASSWORD=daily-diet
+      - POSTGRESQL_DATABASE=daily-diet-api
